@@ -340,6 +340,12 @@ body {
     transition: background 0.2s ease;
 }
 
+@media (max-width: 480px) {
+    .contact-item {
+        font-size: 0.9rem;
+    }
+}
+
 .contact-item:hover {
     background: rgba(60, 72, 100, 0.7);
 }
