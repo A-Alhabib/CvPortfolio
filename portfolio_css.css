@@ -318,7 +318,12 @@ body {
     box-shadow: 0 0 25px rgba(255, 39, 1, 0.5);
 }
 
-
+@media (max-width: 600px) {
+    .Certificates {
+        width: 90%;
+        max-width: 400px;
+    }
+}
 
 .Certificates1 {
     width: 500px;
