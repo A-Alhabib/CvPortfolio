@@ -343,7 +343,7 @@ body {
 }
 
 @media (max-width: 600px) {
-    .Certificates {
+    .Certificates1 {
         width: 90%;
         max-width: 400px;
     }
@@ -367,7 +367,7 @@ body {
 }
 
 @media (max-width: 600px) {
-    .Certificates {
+    .Certificates2 {
         width: 90%;
         max-width: 400px;
     }
