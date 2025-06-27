@@ -486,3 +486,12 @@ body {
 #scrollToTop:hover {
     background-color: #3b82f6;
 }
+
+@media (max-width: 600px) {
+  #scrollToTop {
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 12px 16px;
+  }
+}
