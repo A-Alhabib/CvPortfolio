@@ -81,22 +81,6 @@ body {
     border: none;
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .nav {
-    padding: 1rem;
-  }
-
-  .nav-links a {
-    font-size: 1rem;
-    text-align: center;
-  }
-}
-
 .hero {
     background: linear-gradient(rgb(0, 0, 0) 0%, #101624 50%, #000000 100%);
     color: #f1f5f9;
@@ -292,32 +276,10 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.project {
-    width: 150px;
-    height: 250px;
-    border-radius: 25px;
-    object-fit: fill;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    display: block;
-    margin: 20px auto;
-    transition: all 0.3s ease;
-}
 
-.project:hover {
-    margin-bottom: 100px;
-    margin-top: 100px;
-    transform: scale(1.35);
-    box-shadow: 0 0 25px rgba(50, 129, 233, 0.5);
-}
-
-@media (max-width: 600px) {
-    .project {
-        width: 90%;
-        max-width: 400px;
-    }
-}
-
-.Certificates {
+.Certificates,
+.Certificates1,
+.Certificates2 {
     width: 500px;
     height: auto;
     border-radius: 10px;
@@ -334,47 +296,9 @@ body {
     box-shadow: 0 0 25px rgba(255, 39, 1, 0.5);
 }
 
-@media (max-width: 600px) {
-    .Certificates {
-        width: 90%;
-        max-width: 400px;
-    }
-}
-
-.Certificates1 {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    border: 3px solid white;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    display: block;
-    margin: 20px auto;
-    transition: all 0.3s ease;
-}
-
 .Certificates1:hover {
     transform: scale(1.10);
     box-shadow: 0 0 25px rgba(255, 230, 1, 0.5);
-}
-
-@media (max-width: 600px) {
-    .Certificates1 {
-        width: 90%;
-        max-width: 400px;
-    }
-}
-
-.Certificates2 {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    border: 3px solid white;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    display: block;
-    margin: 20px auto;
-    transition: all 0.3s ease;
 }
 
 .Certificates2:hover {
@@ -383,6 +307,9 @@ body {
 }
 
 @media (max-width: 600px) {
+
+    .Certificates,
+    .Certificates1,
     .Certificates2 {
         width: 90%;
         max-width: 400px;
@@ -390,10 +317,8 @@ body {
 }
 
 
-
 .contact-content {
     text-align: center;
-    max-width: auto;
     margin: 0 auto;
 
 }
@@ -426,12 +351,6 @@ body {
     color: #60a5fa;
     text-decoration: none;
     font-weight: 500;
-}
-
-@media (max-width: 600px) {
-  .contact-box {
-    flex: 1 1 100%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -487,11 +406,78 @@ body {
     background-color: #3b82f6;
 }
 
-@media (max-width: 600px) {
-  #scrollToTop {
-    bottom: 20px;
-    right: 20px;
-    font-size: 20px;
-    padding: 12px 16px;
-  }
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    width: 30px;
+    height: 22px;
+    z-index: 1100;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    background-color: #cbd5e1;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger::before {
+    content: '';
+    top: -8px;
+}
+
+.hamburger::after {
+    content: '';
+    top: 8px;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        background: #000000cc;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 1rem 2rem;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+.nav-toggle.active .hamburger {
+    background-color: transparent;
+}
+
+.nav-toggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav-toggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
 }
