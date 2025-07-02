@@ -187,8 +187,15 @@ body {
 }
 /* Mobile responsive styles for about section text alignment */
 @media (max-width: 600px) {
-  
+    .about-content {
+        text-align: justify !important;
+    }
+    
     .about-text {
+        text-align: justify !important;
+    }
+    
+    .about-text p {
         text-align: justify !important;
     }
 }
