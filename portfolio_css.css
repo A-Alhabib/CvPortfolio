@@ -186,6 +186,15 @@ body {
     font-size: 18px;
 }
 
+@media (max-width: 600px) {
+    .about-content{
+
+        text-align: justify;
+    }
+    
+}
+
+
 /* Circular profile image container */
 .about-image {
     width: 200px;
