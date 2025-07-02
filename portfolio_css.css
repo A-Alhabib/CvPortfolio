@@ -187,11 +187,17 @@ body {
 }
 
 @media (max-width: 600px) {
-    .about-content{
-
+    .about-content {
         text-align: justify !important;
     }
     
+    .about-text {
+        text-align: justify !important;
+    }
+    
+    .about-text p {
+        text-align: justify !important;
+    }
 }
 
 
