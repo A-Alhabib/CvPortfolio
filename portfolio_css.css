@@ -185,21 +185,12 @@ body {
     align-items: center;
     font-size: 18px;
 }
-
+/* Mobile responsive styles for about section text alignment */
 @media (max-width: 600px) {
     
-    .about-content {
-
-        text-align: left !important;
-    }
-    .about-text {
-        text-align: left !important;
-    }
-
      .about-text p {
-        text-align: left !important;
+        text-align: right !important;
     }
-    
     
 }
 
