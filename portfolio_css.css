@@ -187,16 +187,9 @@ body {
 }
 /* Mobile responsive styles for about section text alignment */
 @media (max-width: 600px) {
-    .about-content {
-        text-align: right !important;
-    }
-    
+  
     .about-text {
-        text-align: right !important;
-    }
-    
-    .about-text p {
-        text-align: right !important;
+        text-align: left !important;
     }
 }
 
