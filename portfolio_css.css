@@ -188,10 +188,18 @@ body {
 
 @media (max-width: 600px) {
     
-    
+    .about-content {
+
+        text-align: left !important;
+    }
     .about-text {
         text-align: left !important;
     }
+
+     .about-text p {
+        text-align: left !important;
+    }
+    
     
 }
 
