@@ -189,7 +189,7 @@ body {
 @media (max-width: 600px) {
   
     .about-text {
-        text-align: left !important;
+        text-align: justify !important;
     }
 }
 
